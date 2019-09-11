@@ -1,7 +1,7 @@
 package ToyStore.KidToyStore;
 
 public class TruckSingleton {
-	private TruckSingleton instance;
+	private static TruckSingleton instance;
 	private int count;
 	private float weight;
 	
@@ -9,7 +9,7 @@ public class TruckSingleton {
 		
 	}
 
-	public TruckSingleton getInstance() {
+	public static TruckSingleton getInstance() {
 		if (instance == null) {
 			instance = new TruckSingleton();
 		}
